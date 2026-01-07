@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💬 WhatsApp Wrapped
+# WhatsApp Wrapped
 
 ### *Your Year in Chats, Beautifully Wrapped*
 
