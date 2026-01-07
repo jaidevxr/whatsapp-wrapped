@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 7%;
+    --foreground: 220 10% 95%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 220 10% 95%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 220 10% 95%;
+
+    --primary: 250 85% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 220 10% 95%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 250 60% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 16%;
+    --input: 220 15% 16%;
+    --ring: 250 70% 60%;
+
+    --radius: 1rem;
+
+    /* Subtle accent colors */
+    --accent-purple: 250 70% 60%;
+    --accent-blue: 210 80% 55%;
+    --accent-teal: 175 60% 45%;
+    --accent-rose: 340 65% 55%;
+
+    /* Clean gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(250 70% 60%), hsl(210 80% 55%));
+    --gradient-subtle: linear-gradient(135deg, hsl(220 20% 12%), hsl(220 20% 8%));
+    --gradient-hero: linear-gradient(180deg, hsl(220 20% 7%) 0%, hsl(250 30% 10%) 100%);
+
+    /* Glass effect */
+    --glass-bg: hsl(220 20% 12% / 0.7);
+    --glass-border: hsl(220 10% 100% / 0.08);
+
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 220 10% 95%;
+    --sidebar-primary: 250 70% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 14%;
+    --sidebar-accent-foreground: 220 10% 95%;
+    --sidebar-border: 220 15% 16%;
+    --sidebar-ring: 250 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-xl rounded-2xl;
+    background: hsl(220 20% 12% / 0.6);
+    border: 1px solid hsl(220 10% 100% / 0.08);
+    box-shadow: 
+      0 4px 24px hsl(0 0% 0% / 0.2),
+      inset 0 1px 0 hsl(220 10% 100% / 0.05);
+  }
+
+  .glass-card-solid {
+    @apply backdrop-blur-xl rounded-2xl;
+    background: hsl(220 20% 11%);
+    border: 1px solid hsl(220 10% 100% / 0.06);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .gradient-border {
+    position: relative;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: var(--gradient-primary);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
