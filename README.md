@@ -27,26 +27,16 @@
 ---
 
 </div>
-
-<br/>
-
-
-
 <div align="center">
 
-
-
-
-<br/>
-
-### 🔄 How It Works
+###  **How It Works**
 | Step 1: Export | Step 2: Upload | Step 3: Analyze | Step 4: View |
 |:---:|:---:|:---:|:---:|
 | 📤 Export from WhatsApp | 📁 Drag & drop file | ⚙️ Local processing | 🎉 See your Wrapped! |
 
 <br/>
 
-### 🛡️ Privacy Features
+###  **Privacy Features**
 <table>
 <tr>
 <td align="center">🏠<br/><strong>Local Processing</strong></td>
