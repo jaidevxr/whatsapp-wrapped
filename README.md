@@ -30,14 +30,12 @@
 
 <br/>
 
-## 📸 Screenshots
+
 
 <div align="center">
 
-### 🏠 Hero Section
-<img src="https://wrapped-whatsapp.vercel.app/og-image.png" alt="WhatsApp Wrapped Hero" width="800"/>
 
-> *Beautiful dark-themed landing page with gradient accents*
+
 
 <br/>
 
