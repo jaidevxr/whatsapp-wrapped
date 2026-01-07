@@ -24,7 +24,7 @@ export const Footer = () => {
             className="text-sm text-muted-foreground flex items-center gap-1"
             whileHover={{ scale: 1.02 }}
           >
-            Made with <Heart className="w-4 h-4 text-neon-pink fill-neon-pink" /> for chat lovers
+            Made with <Heart className="w-4 h-4 text-neon-pink fill-neon-pink" /> by Jaidev
           </motion.p>
         </div>
       </div>
