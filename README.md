@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/WhatsApp-Wrapped-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Wrapped"/>
+</p>
 <div align="center">
 
 # WhatsApp Wrapped
