@@ -305,7 +305,7 @@ If you found this project helpful, please consider:
 
 <br/>
 
-**Made with ❤️ using [Lovable](https://lovable.dev)**
+**Made with ❤️ by Jaidev**
 
 <br/>
 
